@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/Wrapper.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:300,regular,500,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Mulish:300,regular,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Styles/Header.css" />
+    <title>HTML-project</title>
+  </head>
+  <script>
+    function show_hide() {
+      let click = document.getElementById("list-items");
+      if (click.style.display === "none") {
+        click.style.display = "block";
+      } else {
+        click.style.display = "none";
+      }
+    }
+  </script>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__content">
+            <div class="header__logo logo">
+              <img src="Images/logo.png" alt="Logo" />
+            </div>
+            <nav class="header__list list">
+              <ul class="list__items">
+                <li class="list__item">
+                  <a href="" class="list__link list__link_home"> Home </a>
+                </li>
+                <li class="list__item">
+                  <a href="" class="list__link">Destinations</a>
+                </li>
+                <li class="list__item">
+                  <a href="" class="list__link">About</a>
+                </li>
+                <li class="list__item">
+                  <a href="" class="list__link">Partner</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__block-buttons">
+              <a href="" class="header__login">Login</a>
+              <a href="" class="header__register button">Register</a>
+              <div class="header__dropdown">
+                <button onclick="show_hide()" class="button-dropdown">
+                  Menu
+                </button>
+                <ul id="list-items" class="list__items">
+                  <li class="list__item">
+                    <a href="" class="list__link list__link_home"> Home </a>
+                  </li>
+                  <li class="list__item">
+                    <a href="" class="list__link">Destinations</a>
+                  </li>
+                  <li class="list__item">
+                    <a href="" class="list__link">About</a>
+                  </li>
+                  <li class="list__item">
+                    <a href="" class="list__link">Partner</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>
