@@ -1,16 +1,8 @@
-.header {
-  max-height: 130px;
-}
-
 .header__content {
   display: flex;
   align-items: center;
   max-height: 130px;
   padding: 43px 0px 43px 28px;
-}
-
-.header__dropdown {
-  display: none;
 }
 
 /* HEADER__LOGO */
@@ -82,16 +74,16 @@
 }
 
 .header__register {
-  font-style: normal;
   line-height: 60px;
   font-weight: 500;
   font-size: 15px;
-  color: #ffffff;
 }
 
 .button {
+  font-style: normal;
   background-color: #fb8f1d;
   border-radius: 8px;
+  color: #ffffff;
   padding: 10px 36px 10px 36px;
 }
 
@@ -121,37 +113,85 @@
 /* MEDIA (PHONE) */
 
 @media (max-width: 767.98px) {
-  .header__register {
-    margin-right: 30px;
+  .header__login {
+    margin-left: 18px;
   }
 
-  .header__dropdown {
-    position: relative;
-    display: inline-block;
-  }
-
-  .button-dropdown {
-    padding: 10px 20px;
-    font-size: 15px;
-    color: #ffffff;
-    border-radius: 8px;
-    border: 0px;
-    background-color: #3865d7;
+  .header__list {
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    padding-top: 70px;
+    transition: left 0.3s ease-in-out;
+    background-color: #e1e2e7;
   }
 
   .list__items {
-    display: none;
-    position: absolute;
-    right: -29px;
-    min-width: 140px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .list__item {
+    padding-right: 0px;
+    padding-bottom: 10px;
+  }
+
+  .open-menu {
     display: flex;
-    justify-content: center;
-    background-color: #ddd;
-    color: #b8becd;
-    padding: 10px;
-    border-radius: 8px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+  }
+
+  .open-menu::before,
+  .open-menu::after {
+    content: "";
+    background-color: #000000;
+    height: 2px;
+  }
+
+  .open-menu span {
+    background-color: #000000;
+    height: 2px;
+  }
+
+  .close-menu {
+    display: none;
+    position: relative;
+    right: 110px;
+    width: 30px;
+    height: 20px;
+  }
+
+  .close-menu::before,
+  .close-menu::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  .close-menu::after {
+    transform: rotate(-45deg);
+  }
+
+  .close-menu::before {
+    transform: rotate(45deg);
+  }
+
+  .header:target .header__list {
+    left: 0;
+  }
+
+  .header:target .open-menu {
+    display: none;
+  }
+
+  .header:target .close-menu {
+    display: flex;
   }
 }

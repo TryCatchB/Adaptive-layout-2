@@ -1,0 +1,81 @@
+.main {
+  flex: 1 1 auto;
+}
+
+.Explore-and-travel__content {
+  display: flex;
+  padding: 37px 0px 144px 27px;
+}
+
+.Explore-and-travel__title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 80px;
+  color: #202336;
+  max-height: 160px;
+}
+
+/* EXPLORE-AND-TRAVEL__COLUMN-WITH-BLOCK-INFO */
+
+.Explore-and-travel__column-with-block-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* BLOCK-INFO */
+
+.Explore-and-travel__block-info {
+  margin-top: 74px;
+}
+
+.block-info {
+  max-width: 481px;
+}
+
+.block-info__content {
+}
+
+.block-info__title {
+  position: relative;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #202336;
+}
+
+.block-info__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 45px;
+  width: 32px;
+  height: 2px;
+  background-color: #202336;
+  border-radius: 4px;
+}
+
+/* BLOCK-INFO__NAVIGATION */
+
+.block-info__navigation {
+}
+
+.block-info__navigation-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 32px;
+  color: #4a4c53;
+}
+
+/* EXPLORE-AND-TRAVEL__IMAGE */
+
+.Explore-and-travel__image {
+  flex: 0 1 687px;
+}
+
+.Explore-and-travel__image img {
+  max-width: 100%;
+}
