@@ -6,10 +6,6 @@
 
 /* DECORS */
 
-.new-way__block-info_decor {
-  position: relative;
-}
-
 .new-way__block-info_decor::before,
 .new-way__block-info_decor::after {
   content: "";
@@ -26,11 +22,6 @@
 }
 
 .new-way__block-info_decor-circle {
-  position: relative;
-}
-
-.new-way__block-info_decor-circle::after {
-  content: "";
   position: absolute;
   right: 134px;
   bottom: 47px;
@@ -53,7 +44,6 @@
   font-size: 36px;
   line-height: 50px;
   color: #000000;
-  padding-bottom: 20px;
 }
 
 .block-info__text {
@@ -63,6 +53,7 @@
   font-size: 17px;
   line-height: 30px;
   color: #7d7987;
+  padding-top: 20px;
   padding-bottom: 33px;
 }
 
@@ -77,5 +68,35 @@
 /* NEW-WAY__IMAGE */
 
 .new-way__image {
-  flex: 0 1 659px;
+  max-width: 659px;
+}
+
+/* MEDIA (PC) */
+
+@media (max-width: 1024px) {
+  .new-way__block-info {
+    margin-left: 50px;
+  }
+}
+
+/* MEDIA (TABLET) */
+
+@media (max-width: 1023.98px) {
+  .new-way__content {
+    padding-right: 50px;
+    padding-bottom: 80px;
+  }
+}
+
+/* MEDIA (MOBILE) */
+
+@media (max-width: 767.98px) {
+  .new-way__content {
+    padding-right: 0px;
+    flex-direction: column;
+  }
+
+  .new-way__block-info {
+    margin-top: 60px;
+  }
 }

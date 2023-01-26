@@ -116,7 +116,6 @@
   .header__login {
     padding-left: 20px;
     padding-right: 20px;
-    margin-left: 10px;
     margin-right: 0px;
   }
 
@@ -165,6 +164,7 @@
     justify-content: space-between;
     width: 30px;
     height: 20px;
+    margin-right: 5px;
   }
 
   .open-menu::before,
