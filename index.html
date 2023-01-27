@@ -16,10 +16,12 @@
       href="https://fonts.googleapis.com/css?family=Playfair+Display:700"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="Styles/Main/Explore-and-Travel.css" />
     <link rel="stylesheet" href="Styles/Header.css" />
+    <link rel="stylesheet" href="Styles/Main/Explore-and-Travel.css" />
     <link rel="stylesheet" href="Styles/Main/New-way.css" />
     <link rel="stylesheet" href="Styles/Main/Featured.css" />
+    <link rel="stylesheet" href="Styles/Main/Guides.css" />
+    <link rel="stylesheet" href="Styles/Main/Testimonials.css" />
     <title>HTML-project</title>
   </head>
   <body>
@@ -62,14 +64,10 @@
           <div class="explore-and-travel__container">
             <div class="explore-and-travel__content">
               <div class="explore-and-travel__column-with-block-info">
-                <h1
-                  class="explore-and-travel__title explore-and-travel__title_decor title"
-                >
+                <h1 class="explore-and-travel__title title">
                   Explore and Travel
                 </h1>
-                <div
-                  class="explore-and-travel__block-info explore-and-travel__block-info_decor block-info"
-                >
+                <div class="explore-and-travel__block-info block-info">
                   <div class="block-info__content">
                     <h4 class="block-info__title block-info__title_decor">
                       Holiday finder
@@ -77,24 +75,20 @@
                     <div class="block-info__navigation">
                       <div class="block-info__navigation-row-1">
                         <div
-                          class="block-info__navigation-item block-info__navigation-item_margin navigation-item"
+                          class="block-info__navigation-item block-info__navigation-item_margin"
                         >
                           Location
                         </div>
-                        <div
-                          class="block-info__navigation-item navigation-item"
-                        >
-                          Activity
-                        </div>
+                        <div class="block-info__navigation-item">Activity</div>
                       </div>
                       <div class="block-info__navigation-row-2">
                         <div
-                          class="block-info__navigation-item block-info__navigation-item_margin-and-padding navigation-item"
+                          class="block-info__navigation-item block-info__navigation-item_margin-and-padding"
                         >
                           Grade
                         </div>
                         <div
-                          class="block-info__navigation-item block-info__navigation-item_padding navigation-item"
+                          class="block-info__navigation-item block-info__navigation-item_padding"
                         >
                           Date
                         </div>
@@ -118,9 +112,7 @@
               <div class="new-way__image image">
                 <img src="Images/NewOpportunity.png" alt="NewOpportunity" />
               </div>
-              <div
-                class="new-way__block-info new-way__block-info_decor block-info"
-              >
+              <div class="new-way__block-info block-info">
                 <div class="block-info__content">
                   <h2 class="block-info__title block-info__title_modify">
                     A new way to explore the world
@@ -146,11 +138,11 @@
           <div class="featured__container">
             <div class="featured__content">
               <div class="featured__row-title row-title">
-                <h2 class="row-title__title title">Featured destinations</h2>
+                <h2 class="row-title__title">Featured destinations</h2>
                 <h5 class="row-title__view-all">View all</h5>
               </div>
               <div class="row-columns">
-                <div class="column">
+                <div class="column column_decor-plus">
                   <div class="column__content">
                     <div class="column__image">
                       <img
@@ -164,7 +156,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="column">
+                <div class="column column_decor-circle">
                   <div class="column__content">
                     <div class="column__image">
                       <img src="Images/China.png" alt="Fanjingshan (China)" />
@@ -201,6 +193,74 @@
                       <h3 class="column__title">Skadar</h3>
                       <h5 class="column__sub-title">Montenegro</h5>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="guides">
+          <div class="guides__container">
+            <div class="guides__content">
+              <div class="guides__block-info block-info">
+                <div class="block-info__content">
+                  <h2 class="block-info__title block-info__title_modify">
+                    Guides by Thousand Sunny
+                  </h2>
+                  <div class="block-info__text">
+                    Packed with tips and advice from our on-the-ground experts,
+                    our city guides app (iOS and Android) is the ultimate
+                    resource before and during a trip.
+                  </div>
+                  <a
+                    href=""
+                    class="block-info__button block-info__button_modify button"
+                    >Download</a
+                  >
+                </div>
+                <div class="guides__block-info_decor-circle"></div>
+              </div>
+              <div class="guides__image image">
+                <img src="Images/Messages.png" alt="Messages" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="testimonials">
+          <div class="testimonials__container">
+            <div class="testimonials__content">
+              <div class="row-title">
+                <h2 class="row-title__title">Testimonials</h2>
+              </div>
+              <div class="testimonials__block-info block-info">
+                <div class="block-info__content">
+                  <div class="block-info__grade">
+                    <img src="Images/stars.png" alt="Stars" />
+                  </div>
+                  <div class="block-info__text block-info__text_modify">
+                    “Quisque in lacus a urna fermentum euismod. Integer mi nibh,
+                    dapibus ac scelerisque eu, facilisis quis purus. Morbi
+                    blandit sit amet turpis nec”
+                  </div>
+                  <div class="block-info__info-person">
+                    <h4 class="block-info__info-person-name">Edward Newgate</h4>
+                    <h6 class="block-info__info-person-company">
+                      Founder Circle
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="column__content">
+                  <div class="column__image">
+                    <img
+                      src="Images/Switzerland.png"
+                      alt="Vevey (Switzerland)"
+                    />
+                  </div>
+                  <div class="column__description-image">
+                    <h3 class="column__title">Vevey</h3>
+                    <h5 class="column__sub-title">Switzerland</h5>
                   </div>
                 </div>
               </div>
