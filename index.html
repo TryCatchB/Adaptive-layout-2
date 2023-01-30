@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="Styles/Main/Featured.css" />
     <link rel="stylesheet" href="Styles/Main/Guides.css" />
     <link rel="stylesheet" href="Styles/Main/Testimonials.css" />
+    <link rel="stylesheet" href="Styles/Main/Trending stories.css" />
     <title>HTML-project</title>
   </head>
   <body>
@@ -30,7 +31,7 @@
         <div class="header__container">
           <div id="close" class="header__content">
             <div class="header__logo logo">
-              <img src="Images/logo.png" alt="Logo" />
+              <img src="Images/Logo.png" alt="Logo" />
             </div>
             <nav class="header__list list">
               <ul class="list__items">
@@ -229,38 +230,86 @@
         <section class="testimonials">
           <div class="testimonials__container">
             <div class="testimonials__content">
-              <div class="row-title">
+              <div class="testimonials__row-title row-title">
                 <h2 class="row-title__title">Testimonials</h2>
               </div>
-              <div class="testimonials__block-info block-info">
-                <div class="block-info__content">
-                  <div class="block-info__grade">
-                    <img src="Images/stars.png" alt="Stars" />
+              <div class="row-info">
+                <div class="row-info__block-info block-info">
+                  <div class="block-info__content">
+                    <div class="block-info__grade-image">
+                      <img src="Images/Stars.png" alt="Stars" />
+                    </div>
+                    <div class="block-info__text block-info__text_modify">
+                      “Quisque in lacus a urna fermentum euismod. Integer mi
+                      nibh, dapibus ac scelerisque eu, facilisis quis purus.
+                      Morbi blandit sit amet turpis nec”
+                    </div>
+                    <div class="block-info__info-person">
+                      <h4 class="block-info__info-person-name">
+                        Edward Newgate
+                      </h4>
+                      <h6 class="block-info__info-person-company">
+                        Founder Circle
+                      </h6>
+                    </div>
                   </div>
-                  <div class="block-info__text block-info__text_modify">
-                    “Quisque in lacus a urna fermentum euismod. Integer mi nibh,
-                    dapibus ac scelerisque eu, facilisis quis purus. Morbi
-                    blandit sit amet turpis nec”
-                  </div>
-                  <div class="block-info__info-person">
-                    <h4 class="block-info__info-person-name">Edward Newgate</h4>
-                    <h6 class="block-info__info-person-company">
-                      Founder Circle
-                    </h6>
+                </div>
+                <div class="column column__size column__decor">
+                  <div class="column__content">
+                    <div class="column__image">
+                      <img src="Images/Person.png" alt="Person" />
+                    </div>
+                    <div
+                      class="column__description-image column__description-image_modify"
+                    >
+                      <a href="" class="column__icon-previous">
+                        <img src="Images/Previous.png" alt="previous" />
+                      </a>
+                      <a href="" class="column__icon-next">
+                        <img src="Images/Next.png" alt="next" />
+                      </a>
+                    </div>
+                    <div class="column__decor-circle"></div>
                   </div>
                 </div>
               </div>
-              <div class="column">
-                <div class="column__content">
-                  <div class="column__image">
-                    <img
-                      src="Images/Switzerland.png"
-                      alt="Vevey (Switzerland)"
-                    />
+            </div>
+          </div>
+        </section>
+        <section class="trending-stories">
+          <div class="trending-stories__container">
+            <div class="trending-stories__content">
+              <div class="featured__row-title row-title">
+                <h2 class="row-title__title">Trending stories</h2>
+                <h5 class="row-title__view-all">View all</h5>
+              </div>
+              <div class="row-columns">
+                <div class="column">
+                  <div class="column__content">
+                    <div class="column__image">
+                      <img src="" alt="" />
+                    </div>
                   </div>
-                  <div class="column__description-image">
-                    <h3 class="column__title">Vevey</h3>
-                    <h5 class="column__sub-title">Switzerland</h5>
+                </div>
+                <div class="column column_decor-circle">
+                  <div class="column__content">
+                    <div class="column__image">
+                      <img src="" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="column__content">
+                    <div class="column__image">
+                      <img src="" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="column__content">
+                    <div class="column__image">
+                      <img src="" alt="" />
+                    </div>
                   </div>
                 </div>
               </div>

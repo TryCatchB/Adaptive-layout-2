@@ -95,4 +95,8 @@
   .new-way__block-info {
     margin-top: 60px;
   }
+
+  .block-info__title_modify {
+    font-size: 30px;
+  }
 }
