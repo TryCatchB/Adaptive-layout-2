@@ -115,7 +115,7 @@
   object-fit: cover;
 }
 
-.column__description-image_modify {
+.column__description-image_arrows {
   display: flex;
   align-items: center;
   right: 0px;
