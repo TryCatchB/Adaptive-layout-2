@@ -66,16 +66,16 @@
 
 /* COLUMN-ICONS */
 
-.column__size {
+.column_size {
   flex: 0 1 384px;
 }
 
-.column__decor {
+.column_decor-plus {
   position: relative;
 }
 
-.column__decor::before,
-.column__decor::after {
+.column_decor-plus::before,
+.column_decor-plus::after {
   content: "";
   position: absolute;
   z-index: 2;
@@ -86,7 +86,7 @@
   background-color: #fdd08d;
 }
 
-.column__decor::before {
+.column_decor-plus::before {
   transform: rotate(90deg);
 }
 
