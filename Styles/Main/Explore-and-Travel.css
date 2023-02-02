@@ -9,14 +9,11 @@
 
 /* EXPLORE-AND-TRAVEL__TITLE*/
 
-.title {
+.explore-and-travel__title {
+  position: relative;
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;
-}
-
-.explore-and-travel__title {
-  position: relative;
   font-size: 64px;
   line-height: 80px;
   color: #202336;
@@ -46,14 +43,17 @@
 
 .block-info__navigation-item {
   position: relative;
+  border: 0.8px solid #afb0b9;
+  border-radius: 6px;
+  padding: 15px 129px 15px 31px;
+}
+
+.block-info__navigation-item-title {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 32px;
   color: #4a4c53;
-  border: 0.8px solid #afb0b9;
-  border-radius: 6px;
-  padding: 15px 129px 15px 31px;
 }
 
 .block-info__navigation-item::before,
@@ -100,9 +100,9 @@
   padding-right: 146px;
 }
 
-/* EXPLORE-AND-TRAVEL__COLUMN-WITH-BLOCK-INFO */
+/* EXPLORE-AND-TRAVEL__COLUMN-BLOCK-INFO */
 
-.explore-and-travel__column-with-block-info {
+.explore-and-travel__column-block-info {
   display: flex;
   flex-direction: column;
 }
