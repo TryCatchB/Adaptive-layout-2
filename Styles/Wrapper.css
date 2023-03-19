@@ -43,11 +43,14 @@ ol[class] {
 
 body {
   font-family: "Inter";
-  min-height: 100vh;
+  font-style: normal;
+  font-weight: 500;
+  color: #000;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
 }
+
+/* ************* */
 
 .wrapper {
   overflow: hidden;
