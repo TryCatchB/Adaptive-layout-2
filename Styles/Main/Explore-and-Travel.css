@@ -4,7 +4,8 @@
 
 .explore-and-travel__content {
   display: flex;
-  padding: 37px 27px 143px 27px;
+  padding: 37px 20px 143px 20px;
+  gap: 147px;
 }
 
 .explore-and-travel__title {
@@ -40,10 +41,6 @@
 }
 
 /* BLOCK-INFO */
-
-.column-block-info:not(:last-child) {
-  margin-right: 147px;
-}
 
 .explore-and-travel__block-info {
   position: relative;
@@ -111,10 +108,10 @@
 
 .navigation__item {
   position: relative;
+  width: 100%;
   border-radius: 6px;
   border: 0.8px solid #afb0b9;
-  width: 47%;
-  padding: 21px 0px 21px 31px;
+  padding: 15px 0px 15px 31px;
 }
 
 .navigation__item:hover {
@@ -156,7 +153,6 @@
 .navigation-row-grade-date {
   display: flex;
   gap: 30px;
-  max-width: 470px;
 }
 
 .navigation-row-location-activity:not(:last-child) {
@@ -171,8 +167,12 @@
 /* MEDIA (TABLET) */
 
 @media (max-width: 1023px) {
-  .column-block-info:not(:last-child) {
-    margin-right: 80px;
+  .explore-and-travel__content {
+    gap: 100px;
+  }
+
+  .explore-and-travel__block-info {
+    min-width: 280px;
   }
 
   .explore-and-travel__title:not(:last-child) {
@@ -183,8 +183,21 @@
     font-size: 40px;
   }
 
+  .block-info__navigation:not(:last-child) {
+    margin-bottom: 41px;
+  }
+
+  .navigation-row-location-activity,
+  .navigation-row-grade-date {
+    gap: 15px;
+  }
+
+  .navigation-row-location-activity:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
   .navigation__item {
-    padding: 10px 0px 10px 21px;
+    padding: 10px 0px 10px 15px;
   }
 
   .navigation__item::after {
@@ -198,5 +211,18 @@
   .explore-and-travel__content {
     flex-direction: column;
     align-items: center;
+    padding: 37px 20px 50px 20px;
+  }
+
+  .explore-and-travel__title:not(:last-child) {
+    margin-bottom: 34px;
+  }
+
+  .navigation__item-title {
+    font-size: 13px;
+  }
+
+  .block-info__button {
+    padding: 10px 20px;
   }
 }

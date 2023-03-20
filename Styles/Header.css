@@ -47,7 +47,7 @@
 /* BLOCK-BUTTONS */
 
 .header__block-buttons {
-  max-width: 290px;
+  max-width: 388px;
 }
 
 .header__login {
@@ -90,15 +90,15 @@
 
 @media (max-width: 1023px) {
   .header__content {
-    padding: 23px 15px 23px 15px;
+    padding: 23px 15px;
   }
 
   .header__register {
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
   }
 
   .header__login {
-    padding: 8px 30px 8px 30px;
+    padding: 8px 30px;
   }
 
   .list__items {
@@ -199,7 +199,7 @@
   }
 
   .header__login {
-    padding: 8px 15px 8px 15px;
+    padding: 8px 15px;
   }
 
   .header__login:not(:last-child) {
