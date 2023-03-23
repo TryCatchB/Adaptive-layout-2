@@ -168,7 +168,7 @@
 
 @media (max-width: 1023px) {
   .explore-and-travel__content {
-    gap: 100px;
+    gap: 30px;
   }
 
   .explore-and-travel__block-info {
@@ -211,7 +211,7 @@
   .explore-and-travel__content {
     flex-direction: column;
     align-items: center;
-    padding: 37px 20px 50px 20px;
+    padding: 37px 20px 100px 20px;
   }
 
   .explore-and-travel__title:not(:last-child) {
