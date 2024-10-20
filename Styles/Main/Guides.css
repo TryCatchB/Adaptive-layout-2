@@ -8,16 +8,15 @@
 .guides__block-info {
   position: relative;
   max-width: 410px;
-}
 
-.guides__block-info:not(:last-child) {
-  margin-right: 80px;
+  &:not(:last-child){
+    margin-right: 80px;
+  }
 }
 
 /* DECORS */
 
-.guides__block-info::before,
-.guides__block-info::after {
+:is(.guides__block-info::before, .guides__block-info::after) {
   content: "";
   position: absolute;
   right: 39px;
@@ -51,8 +50,7 @@
   position: relative;
 }
 
-.guides__image::before,
-.guides__image::after {
+:is(.guides__image::before, .guides__image::after) {
   content: "";
   position: absolute;
   top: 50px;

@@ -13,10 +13,10 @@
   align-items: center;
   justify-content: space-between;
   width: 84%;
-}
 
-.featured__row-title:not(:last-child) {
-  margin-bottom: 54px;
+  &:not(:last-child) {
+    margin-bottom: 54px;
+  }
 }
 
 .row-title__title {
@@ -33,10 +33,10 @@
   font-size: 17px;
   line-height: 353%;
   color: #fb8f1d;
-}
 
-.row-title__view-all:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 /* COLUMN */
@@ -71,40 +71,39 @@
 
 .column_decor-plus {
   position: relative;
-}
 
-.column_decor-plus::before,
-.column_decor-plus::after {
-  content: "";
-  position: absolute;
-  left: -96px;
-  bottom: 131px;
-  width: 20px;
-  height: 5px;
-  background-color: #fdd08d;
-}
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: -96px;
+    bottom: 131px;
+    width: 20px;
+    height: 5px;
+    background-color: #fdd08d;
+  }
 
-.column_decor-plus::before {
-  transform: rotate(91deg);
+  &::before {
+    transform: rotate(91deg);
+  }
 }
 
 .column_decor-circle {
   position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 23px;
+    bottom: -59px;
+    width: 20px;
+    height: 20px;
+    border: #57d2a3 solid 3px;
+    border-radius: 15px;
+  }
 }
 
-.column_decor-circle::after {
-  content: "";
-  position: absolute;
-  right: 23px;
-  bottom: -59px;
-  width: 20px;
-  height: 20px;
-  border: #57d2a3 solid 3px;
-  border-radius: 15px;
-}
-
-.row-title__view-all::before,
-.row-title__view-all::after {
+:is(.row-title__view-all::before, .row-title__view-all::after) {
   content: "";
   position: absolute;
   right: -20px;
@@ -126,15 +125,19 @@
 
 /* IMAGE */
 
-.column__image img {
-  max-width: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-}
+.column__image {
+  transition: opacity 0.3s ease-in-out;
 
-.column__image:hover {
-  opacity: 0.8;
-  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  & img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
 }
 
 .column__description-image {
@@ -161,8 +164,7 @@
   color: #80918e;
 }
 
-.column__title:hover,
-.column__sub-title:hover {
+:is(.column__title:hover, .column__sub-title:hover) {
   text-decoration: underline;
 }
 
@@ -187,8 +189,7 @@
     padding: 5px 0px 0px 0px;
   }
 
-  .column__title,
-  .column__sub-title {
+  :is(.column__title, .column__sub-title) {
     font-size: 13px;
   }
 }

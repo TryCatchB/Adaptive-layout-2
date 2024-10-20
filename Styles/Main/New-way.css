@@ -10,21 +10,21 @@
 .new-way__block-info {
   position: relative;
   max-width: 450px;
-}
 
-.new-way__block-info::before,
-.new-way__block-info::after {
-  content: "";
-  position: absolute;
-  top: -89px;
-  left: -53px;
-  width: 20px;
-  height: 5px;
-  background-color: #fdd08d;
-}
+  &::before, 
+  &::after {
+    content: "";
+    position: absolute;
+    top: -89px;
+    left: -53px;
+    width: 20px;
+    height: 5px;
+    background-color: #fdd08d;
+  }
 
-.new-way__block-info::before {
-  transform: rotate(91deg);
+  &::before {
+    transform: rotate(91deg);
+  }
 }
 
 .new-way__block-info_decor-circle {
@@ -43,10 +43,10 @@
   font-size: 36px;
   line-height: 139%;
   color: #000000;
-}
 
-.block-info__title_modify:not(:last-child) {
-  margin-bottom: 20px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .block-info__text {
@@ -55,10 +55,10 @@
   font-size: 17px;
   line-height: 176%;
   color: #7d7987;
-}
 
-.block-info__text:not(:last-child) {
-  margin-bottom: 33px;
+  &:not(:last-child) {
+    margin-bottom: 33px;
+  }
 }
 
 .block-info__button_modify {

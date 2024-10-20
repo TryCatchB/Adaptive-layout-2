@@ -7,10 +7,10 @@
 
 .testimonials__row-title {
   width: 77%;
-}
 
-.testimonials__row-title:not(:last-child) {
-  margin-bottom: 43px;
+  &:not(:last-child) {
+    margin-bottom: 43px;
+  }
 }
 
 /* BLOCK-INFO */
@@ -23,21 +23,21 @@
 .testimonials__block-info {
   position: relative;
   max-width: 450px;
-}
 
-.testimonials__block-info:not(:last-child) {
-  margin-right: 169px;
-}
+  &:not(:last-child) {
+    margin-right: 169px;
+  }
 
-.testimonials__block-info::before {
-  content: "";
-  position: absolute;
-  top: 104px;
-  left: -122px;
-  width: 22px;
-  height: 22px;
-  border: #57d2a3 solid 3px;
-  border-radius: 15px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 104px;
+    left: -122px;
+    width: 22px;
+    height: 22px;
+    border: #57d2a3 solid 3px;
+    border-radius: 15px;
+  }
 }
 
 .block-info__grade img {
@@ -54,10 +54,10 @@
   font-size: 24px;
   line-height: 150%;
   color: inherit;
-}
 
-.block-info__text_modify:not(:last-child) {
-  margin-bottom: 40px;
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 
 .person__name {
@@ -89,15 +89,16 @@
   padding: 20px 0px 0px 30px;
 }
 
-.column__icon-next img,
-.column__icon-previous img {
-  max-width: 100%;
-  object-fit: cover;
-}
+:is(.column__icon-next, .column__icon-previous) {
+  & img {
+    max-width: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+  }
 
-.column__icon-next img:hover,
-.column__icon-previous img:hover {
-  opacity: 0.8;
+  & img:hover {
+    opacity: 0.6;
+  }
 }
 
 .column__icon-previous:not(:last-child) {
@@ -119,22 +120,22 @@
 
 .column_plus-decor {
   position: relative;
-}
 
-.column_plus-decor::before,
-.column_plus-decor::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  left: -14px;
-  bottom: 3px;
-  width: 31px;
-  height: 7px;
-  background-color: #fdd08d;
-}
+  &::before {
+    transform: rotate(90deg);
+  }
 
-.column_plus-decor::before {
-  transform: rotate(90deg);
+  &::before, 
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: -14px;
+    bottom: 3px;
+    width: 31px;
+    height: 7px;
+    background-color: #fdd08d;
+  }
 }
 
 /* MEDIA (TABLET) */
